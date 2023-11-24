@@ -48,6 +48,10 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
+# Constraining floating window size
+floating_minimum_size 100 x 100
+floating_maximum_size 700 x 700
+
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal
 
@@ -55,8 +59,11 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Shift+A kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+shift+d exec --no-startup-id dmenu_run
+#bindsym $mod+d exec "i3-dmenu-desktop -nf '#8CBCBD' -nb '#1C1D27' -sb '#8CBCBD' -sf '#1C1D27' -fn 'monospace-10-bold'"
+
+bindsym $mod+d exec rofi -show drun
+bindsym $mod+shift+d exec "dmenu_run -nf '#8CBCBD' -nb '#1C1D27' -sb '#8CBCBD' -sf '#1C1D27' -fn 'monospace-10-bold'"
+#bindsym $mod+shift+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -232,9 +239,9 @@ smart_gaps on
 bindsym $mod+c exec firefox
 bindsym XF86MonBrightnessDown exec brightnessctl s 1-
 bindsym XF86MonBrightnessUp exec brightnessctl s +1
-bindsym Control+$mod+l exec "i3lock -c 0000005"
+bindsym ctrl+$mod+l exec "i3lock-fancy"
 
-## Screenshots
+# Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
 bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
 bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
@@ -248,7 +255,9 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection c
 
 exec xfce4-terminal
 exec --no-startup-id setxkbmap -layout fr -variant mac
-exec_always --no-startup-id feh --bg-scale ~/Images/background/Cyberpunk/Android_cp.jpg
+exec_always --no-startup-id feh --bg-scale ~/.config/background/Cyberpunk/Android_cp.jpg
 exec_always --no-startup-id compton
 exec killall -q notify-osd
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
+exec --no-startup-id xss-lock i3lock-fancy
+

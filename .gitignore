@@ -5,4 +5,8 @@
 !i3status/
 !dunst/
 !xfce4/
+!rofi/
+!polybar/
+!background/
+!picom.conf
 #comment
