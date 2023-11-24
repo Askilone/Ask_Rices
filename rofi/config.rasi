@@ -14,24 +14,24 @@ configuration {
 
 
 * {
-	background:                      rgba(28,29,39,0.9);
-	bordercolor:                     #8cbcbd;
+	background:                      rgba(52, 52, 44, 0.9);
+	bordercolor:                     #d9c7a6;
 	separatorcolor:                  #c83572;
 	normal-background:               rgba(28,29,39,0);
-	normal-foreground:               #8cbcbd;
-	alternate-normal-foreground:     #1c1d27;
-	selected-normal-background:      #8cbcbd;
-	selected-normal-foreground:      #1c1d27;
+	normal-foreground:               #d9c7a6;
+	alternate-normal-foreground:     #34342c;
+	selected-normal-background:      #d9c7a6;
+	selected-normal-foreground:      #34342c;
 	active-background:               rgba(28,29,39,0);
-	active-foreground:               #8cbcbd;
-	alternate-active-background:     #1c1d27;
+	active-foreground:               #d9c7a6;
+	alternate-active-background:     #34342c;
 	selected-active-background:      #2ed3b5;
-	selected-active-foreground:      #1c1d27;
+	selected-active-foreground:      #34342c;
 	urgent-background:               rgba(28,29,39,0);
-	urgent-foreground:               #8cbcbd;
-	alternate-urgent-background:     #1c1d27;
-	selected-urgent-background:      #c83572;
-	selected-urgent-foreground:      #1c1d27;
+	urgent-foreground:               #d9c7a6;
+	alternate-urgent-background:     #34342c;
+	selected-urgent-background:      #b75a75;
+	selected-urgent-foreground:      #34342c;
 	alternate-normal-foreground:     @normal-foreground;
 	alternate-urgent-foreground:     @urgent-foreground;
 	alternate-active-foreground:     @active-foreground;

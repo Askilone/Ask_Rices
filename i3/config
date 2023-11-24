@@ -62,7 +62,7 @@ bindsym $mod+Shift+A kill
 #bindsym $mod+d exec "i3-dmenu-desktop -nf '#8CBCBD' -nb '#1C1D27' -sb '#8CBCBD' -sf '#1C1D27' -fn 'monospace-10-bold'"
 
 bindsym $mod+d exec rofi -show drun
-bindsym $mod+shift+d exec "dmenu_run -nf '#8CBCBD' -nb '#1C1D27' -sb '#8CBCBD' -sf '#1C1D27' -fn 'monospace-10-bold'"
+bindsym $mod+shift+d exec "dmenu_run -nf '#d9c7a6' -nb '#34342c' -sb '#d9c7a6' -sf '#34342c' -fn 'monospace-10-bold'"
 #bindsym $mod+shift+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -201,28 +201,29 @@ bar {
         status_command i3status
         font pango: Monospace bold 10
 
-# color used in bar : blue: #3a4977 , cyan: #2ed3b5 , darkblue: #1c1d27 , purple: #c83572 
+# color used in bar : cream: #d9c7a6 , darkgrey: #34342c , 
+# blue:  #44848c, purple: #b75a75 , palegreen : #85ab94
         colors {
-        background #1c1d27
-        statusline #8CBCBD
-        separator #c83572
+        background #34342c 
+        statusline #d9c7a6
+        separator  #44848c
                            #Border  color    text
-        focused_workspace  #8CBCBD #8CBCBD #1c1d27
-        active_workspace   #3a4977 #3a4977 #1c1d27
-        inactive_workspace #1c1d27 #1c1d27 #8CBCBD
-        urgent_workspace   #c83572 #c83572 #1c1d27
-        binding_mode       #2ed3b5 #2ed3b5 #1c1d27 
+        focused_workspace  #d9c7a6 #d9c7a6 #34342c
+        active_workspace   #3a4977 #3a4977 #34342c
+        inactive_workspace #34342c #34342c #d9c7a6
+        urgent_workspace   #b75a75 #b75a75 #34342c
+        binding_mode       #85ab94 #85ab94 #34342c 
     }
 }
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #8CBCBD #8CBCBD #1c1d27 #c83572   #8CBCBD
-client.focused_inactive #8CBCBD #1c1d27 #8CBCBD #c83572   #3a4977
-client.unfocused        #8CBCBD #1c1d27 #8CBCBD #c83572   #3a4977
-client.urgent           #c83572 #c83572 #ffffff #c83572   #c83572
-client.placeholder      #f5b0ef #f5b0ef #f5b0ef #c83572   #f5b0ef
+client.focused          #d9c7a6 #d9c7a6 #34342c #b75a75   #d9c7a6
+client.focused_inactive #d9c7a6 #34342c #d9c7a6 #b75a75   #85ab94
+client.unfocused        #d9c7a6 #34342c #d9c7a6 #b75a75   #85ab94
+client.urgent           #b75a75 #b75a75 #d9c7a6 #b75a75   #b75a75
+client.placeholder      #44848c #44848c #44848c #b75a75   #44848c
 
-client.background       #1c1d27
+client.background       #34342c
 
 #terminal gogh themes : 16 145 21 100 187 190 228 249
 
@@ -255,7 +256,7 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection c
 
 exec xfce4-terminal
 exec --no-startup-id setxkbmap -layout fr -variant mac
-exec_always --no-startup-id feh --bg-scale ~/.config/background/Cyberpunk/Android_cp.jpg
+exec_always --no-startup-id feh --bg-scale ~/.config/background/Geisha.png
 exec_always --no-startup-id compton
 exec killall -q notify-osd
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
