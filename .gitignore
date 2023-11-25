@@ -9,4 +9,6 @@
 !polybar/
 !background/
 !picom.conf
+!.vimrc
+!.bashrc
 #comment
