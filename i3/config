@@ -197,8 +197,9 @@ bar {
         i3bar_command i3bar --transparency
         position top
         separator_symbol " // "
-	strip_workspace_numbers yes
+		strip_workspace_numbers yes
         status_command i3status
+		mode invisible
         font pango: Monospace bold 11
 
 # color used in bar : cream: #d9c7a6 , darkgrey: #34342c , 
@@ -242,7 +243,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 1-
 bindsym XF86MonBrightnessUp exec brightnessctl s +1
 bindsym XF86KbdBrightnessUp  exec brightnessctl --device='smc::kbd_backlight' set +10%
 bindsym XF86KbdBrightnessDown exec brightnessctl --device='smc::kbd_backlight' set 10%-
-bindsym ctrl+$mod+l exec "i3lock-fancy"
+bindsym ctrl+$mod+l exec "betterlockscreen -l dim"
 
 # Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
@@ -263,5 +264,4 @@ exec_always --no-startup-id picom
 exec --no-startup-id nm-applet --indicator
 exec killall -q notify-osd
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
-exec --no-startup-id xss-lock i3lock-fancy
-
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
