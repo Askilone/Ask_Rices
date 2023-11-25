@@ -9,13 +9,13 @@ general {
 
 order += "tztime local"
 order += "tztime paris"
-order += "wireless wlp3s0"
+order += "wireless wlan0"
 order += "battery 0"
 order += "volume master"
 order += "load"
 
 
-wireless wlp3s0 {
+wireless wlan0 {
         format_up = "W: %quality %essid"
         format_down = "W: down"
 }

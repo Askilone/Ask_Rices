@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-terminal" version="1.0">
+  <property name="background-mode" type="string" value="TERMINAL_BACKGROUND_TRANSPARENT"/>
+  <property name="background-darkness" type="double" value="0.84999999999999998"/>
+  <property name="misc-menubar-default" type="bool" value="false"/>
+  <property name="color-foreground" type="string" value="#d9d9c7c7a6a6"/>
+  <property name="color-background" type="string" value="#1d1d24242424"/>
+  <property name="color-cursor-use-default" type="bool" value="false"/>
+  <property name="color-cursor-foreground" type="string" value="#1d1d24242424"/>
+  <property name="color-palette" type="string" value="rgb(0,0,0);rgb(183,90,117);rgb(183,90,117);rgb(68,132,140);rgb(68,132,140);rgb(183,90,117);rgb(217,199,166);rgb(217,199,166);rgb(133,171,148);rgb(183,90,117);rgb(133,171,148);rgb(68,132,140);rgb(183,90,117);rgb(183,90,117);rgb(133,171,148);rgb(217,199,166)"/>
+  <property name="tab-activity-color" type="string" value="#b7b75a5a7574"/>
+  <property name="font-name" type="string" value="Monospace 12"/>
+  <property name="font-use-system" type="bool" value="true"/>
+  <property name="color-selection-use-default" type="bool" value="false"/>
+  <property name="color-selection" type="string" value="#1d1d24242424"/>
+  <property name="color-selection-background" type="string" value="#d9d9c7c7a6a6"/>
+  <property name="color-use-theme" type="bool" value="false"/>
+  <property name="scrolling-bar" type="string" value="TERMINAL_SCROLLBAR_NONE"/>
+  <property name="misc-cursor-blinks" type="bool" value="true"/>
+  <property name="color-cursor" type="string" value="#d9d9c7c7a6a6"/>
+  <property name="misc-confirm-close" type="bool" value="false"/>
+</channel>

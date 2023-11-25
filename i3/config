@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Monospace bold 9
+font pango: Monospace bold 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -199,7 +199,7 @@ bar {
         separator_symbol " // "
 	strip_workspace_numbers yes
         status_command i3status
-        font pango: Monospace bold 10
+        font pango: Monospace bold 11
 
 # color used in bar : cream: #d9c7a6 , darkgrey: #34342c , 
 # blue:  #44848c, purple: #b75a75 , palegreen : #85ab94
@@ -231,7 +231,7 @@ client.background       #34342c
 # gaps
 
 default_border pixel
-gaps inner 4px
+gaps inner 6px
 gaps outer 15px
 smart_gaps on
 
@@ -240,6 +240,8 @@ smart_gaps on
 bindsym $mod+c exec firefox
 bindsym XF86MonBrightnessDown exec brightnessctl s 1-
 bindsym XF86MonBrightnessUp exec brightnessctl s +1
+bindsym XF86KbdBrightnessUp  exec brightnessctl --device='smc::kbd_backlight' set +10%
+bindsym XF86KbdBrightnessDown exec brightnessctl --device='smc::kbd_backlight' set 10%-
 bindsym ctrl+$mod+l exec "i3lock-fancy"
 
 # Screenshots
@@ -255,9 +257,10 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection c
 # startup programs
 
 #exec xfce4-terminal
-#exec --no-startup-id setxkbmap -layout fr -variant mac
+exec_always --no-startup-id setkblayout fr mac
 exec_always --no-startup-id feh --bg-scale ~/.config/background/Geisha.png
-exec_always --no-startup-id compton
+exec_always --no-startup-id picom
+exec --no-startup-id nm-applet --indicator
 exec killall -q notify-osd
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec --no-startup-id xss-lock i3lock-fancy
