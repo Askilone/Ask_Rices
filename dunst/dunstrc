@@ -70,9 +70,9 @@
 
 [urgency_normal]
     background = "#34342c"
-    foreground = "#b75a75"
-    frame_color = "#b75a75"
-    highlight = "#b75a75"
+    foreground = "#d9c7a6"
+    frame_color = "#d9c7a6"
+    highlight = "#d9c7a6"
     timeout = 10
 
 [urgency_critical]
