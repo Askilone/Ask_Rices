@@ -124,7 +124,7 @@ bindsym $mod+q focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:Terminals"
 set $ws2 "2:Browser"
-set $ws3 "3:Text"
+set $ws3 "3:Work"
 set $ws4 "4:Apps"
 set $ws5 "5:Files"
 set $ws6 "6"
