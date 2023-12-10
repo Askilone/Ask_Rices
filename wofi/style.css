@@ -1,0 +1,68 @@
+/* ::root{ */
+/*     --accent: #b75a75; */
+/*     --dark: #34342c; */
+/*     --light: #d9c7a6; */
+/*     --ld: 85ab94; */
+/*     --dl: 44848c; */
+/*     --white: white; */
+/* } */
+
+*{
+    font-family: monospace;
+}
+
+window {
+    background-color: #d9c7a6;
+	border-radius : 4;
+}
+
+#input {
+    margin: 2px;
+    border-radius: 2px;
+    border: none;
+	border-color: #b75a75;
+    border-bottom: 3px solid #b75a75;
+    background-color: #34342c;
+    color: #d9c7a6;
+	outline: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+#inner-box {
+    background-color: #34342c;
+
+}
+
+#outer-box {
+    margin: 2px;
+    padding: 5px;
+    background-color: #34342c;
+}
+
+#scroll {
+	background-color: #34342c;
+	color: #d9c7a6;
+}
+
+
+#text {
+padding: 5px;
+color: #d9c7a6;
+}
+
+#entry:nth-child(even){
+    background-color: #34342c;
+}
+
+#entry:selected {
+    background-color: #85ab94;
+	color: #34342c;
+	border-radius: 4;
+}
+
+#text:selected {
+	color: #34342c;
+}
