@@ -8,7 +8,7 @@
   <property name="color-background" type="string" value="#1d1d24242424"/>
   <property name="color-cursor-use-default" type="bool" value="false"/>
   <property name="color-cursor-foreground" type="string" value="#1d1d24242424"/>
-  <property name="color-palette" type="string" value="rgb(133,171,148);rgb(183,90,117);rgb(183,90,117);rgb(68,132,140);rgb(68,132,140);rgb(183,90,117);rgb(217,199,166);rgb(217,199,166);rgb(133,171,148);rgb(183,90,117);rgb(133,171,148);rgb(68,132,140);rgb(183,90,117);rgb(183,90,117);rgb(133,171,148);rgb(217,199,166)"/>
+  <property name="color-palette" type="string" value="rgb(52,52,44);rgb(183,90,117);rgb(183,90,117);rgb(68,132,140);rgb(68,132,140);rgb(183,90,117);rgb(217,199,166);rgb(217,199,166);rgb(133,171,148);rgb(183,90,117);rgb(133,171,148);rgb(68,132,140);rgb(183,90,117);rgb(183,90,117);rgb(133,171,148);rgb(217,199,166)"/>
   <property name="tab-activity-color" type="string" value="#b7b75a5a7574"/>
   <property name="font-name" type="string" value="Monospace 12"/>
   <property name="font-use-system" type="bool" value="true"/>
