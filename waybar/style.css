@@ -34,6 +34,7 @@ window#waybar.hidden {
 #workspaces button.active {
   color: #353530;
   background-color: #d9c7a6;
+  transition : 200ms;
 }
 
 #workspaces button:hover {
@@ -41,6 +42,7 @@ window#waybar.hidden {
  text-shadow: inherit;
  color: #34342c;
  background-color: #85ab94;
+ transition : 200ms;
 }
 
 #workspaces button.urgent {
