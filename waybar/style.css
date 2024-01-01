@@ -28,13 +28,14 @@ window#waybar.hidden {
   margin: 6px 3px;
   border-radius: 4px;
   background-color: #34342c;
-  color: #d9c7a6;
+  color: #d9c7a6; 
 }
 
 #workspaces button.active {
   color: #353530;
   background-color: #d9c7a6;
   transition : 200ms;
+  /*box-shadow : inset 0 -4px #85ab94;*/
 }
 
 #workspaces button:hover {
