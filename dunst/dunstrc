@@ -1,7 +1,7 @@
 [global]
     follow = keyboard
-    width = (0, 300)
-    height = 150
+    width = (0, 500)
+    height = 80
     origin = top-right
     offset = 48x60
     scale = 0
@@ -14,7 +14,7 @@
     progress_bar_corner_radius = 0
     icon_corner_radius = 0
     indicate_hidden = yes
-    transparency = 5
+    transparency = 30
     separator_height = 2
     padding = 15
     horizontal_padding = 15
@@ -25,10 +25,10 @@
     separator_color = frame
     sort = yes
     idle_threshold = 120
-    font =  Monospace bold 10
+    font =  Ubuntu Regular bold 10
     line_height = 10
     markup = full
-    format = "<b><u>%s</u></b>\n%b\n"
+    format = "<b>%s</b>\n%b\n"
     alignment = left
     vertical_alignment = top
     show_age_threshold = 60
@@ -41,8 +41,8 @@
     enable_recursive_icon_lookup = true
     icon_theme = "breeze-dark, Papirus-Dark"
     icon_position = left
-    min_icon_size = 30
-    max_icon_size = 80
+    min_icon_size = 10
+    max_icon_size = 40
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
     sticky_history = yes
     history_length = 50
@@ -63,20 +63,20 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#233C46"
+    background = "#0D232A"
     foreground = "#BEC3CC"
-    frame_color = "#BEC3CC"
+    frame_color = "#0D232A"
     timeout = 10
 
 [urgency_normal]
-    background = "#233C46"
-    foreground = "#8CBCD5"
-    frame_color = "#8CBCD5"
-    highlight = "#8CBCD5"
+    background = "#0D232A"
+    foreground = "#BEC3CC"
+    frame_color = "#0D232A"
+    highlight = "#BEC3CC"
     timeout = 10
 
 [urgency_critical]
-    background = "#44848c"
-    foreground = "#233C46"
-    frame_color = "#6AA280"
+    background = "#0D232A"
+    foreground = "#6AA280"
+    frame_color = "#0D232A"
     timeout = 0

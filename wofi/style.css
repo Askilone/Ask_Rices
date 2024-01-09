@@ -1,7 +1,7 @@
 /* ::root{ */
 /*     --accent: #b75a75; */
-/*     --dark: #34342c; */
-/*     --light: #d9c7a6; */
+/*     --dark: #0D232A; */
+/*     --light: #BEC3CC; */
 /*     --ld: 85ab94; */
 /*     --dl: 44848c; */
 /*     --white: white; */
@@ -12,7 +12,7 @@
 }
 
 window {
-    background-color: #d9c7a6;
+    background-color: #0D232A;
 	border-radius : 4;
 }
 
@@ -20,10 +20,10 @@ window {
     margin: 2px;
     border-radius: 2px;
     border: none;
-	border-color: #b75a75;
-    border-bottom: 3px solid #b75a75;
-    background-color: #34342c;
-    color: #d9c7a6;
+	  border-color: #6AA280;
+    border-bottom: 3px solid #6AA280;
+    background-color: #0D232A;
+    color: #BEC3CC;
 	outline: none;
 }
 
@@ -32,37 +32,37 @@ window {
 }
 
 #inner-box {
-    background-color: #34342c;
+    background-color: #0D232A;
 
 }
 
 #outer-box {
     margin: 2px;
     padding: 5px;
-    background-color: #34342c;
+    background-color: #0D232A;
 }
 
 #scroll {
-	background-color: #34342c;
-	color: #d9c7a6;
+	background-color: #0D232A;
+	color: #BEC3CC;
 }
 
 
 #text {
 padding: 5px;
-color: #d9c7a6;
+color: #BEC3CC;
 }
 
 #entry:nth-child(even){
-    background-color: #34342c;
+    background-color: #0D232A;
 }
 
 #entry:selected {
-    background-color: #85ab94;
-	color: #34342c;
+    background-color: #6AA280;
+	color: #0D232A;
 	border-radius: 4;
 }
 
 #text:selected {
-	color: #34342c;
+	color: #0D232A;
 }

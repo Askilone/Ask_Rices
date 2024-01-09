@@ -62,12 +62,12 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-    background: #1e1e2e;
-    opacity: 0.8;
+    background: #0D232A;
+    opacity: 0.7;
     padding: 0px 10px;
     margin: 0;
     margin-top: 5px;
-    border: 1px solid #181825;
+    border: 1px solid #061114;
 }
 
 #temperature {
@@ -110,7 +110,7 @@ tooltip {
 }
 
 #clock {
-    color: #fab387;
+    color: #BEC3CC;
     border-radius: 20px;
     margin-left: 5px;
     border-right: 0px;
@@ -132,13 +132,13 @@ tooltip {
 } 
 
 #pulseaudio {
-    color: #89b4fa;
+    color: #8CBCD5;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio.microphone {
-    color: #cba6f7;
+    color: #6AA280;
     border-left: 0px;
     border-right: 0px;
     border-radius: 0px 20px 20px 0px;
