@@ -108,3 +108,15 @@ window#waybar {
 
 #tray {
 }
+
+tooltip {
+    background-color: transparent;
+    border: none;
+}
+
+tooltip label {
+    background-color: rgb(13, 35, 42);
+    color: #BEC3CC;
+    border-radius: 4px;
+}
+
