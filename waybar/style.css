@@ -95,7 +95,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #f53c3c;
+    color: #b75a75;
 }
 
 #pulseaudio {
