@@ -6,7 +6,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces","hyprland/window", "custom/spotify"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "pulseaudio", "network", "cpu", "battery"],
+    "modules-right": ["tray", "pulseaudio", "network", "battery", "cpu"],
     "hyprland/workspaces": {
         "disable-scroll": true,
         "on-click": "activate",
