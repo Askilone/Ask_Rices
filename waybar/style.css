@@ -65,17 +65,17 @@ window#waybar {
 }
 
 #battery.charging {
+    color: #5d8f70;
 }
 
 @keyframes blink {
     to {
-        background-color: #5d8f70;
-        color: #0D232A;
+        color: #ff964f;
     }
 }
 
 #battery.warning:not(.charging) {
-    color: white;
+    color: #ff964f;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -94,7 +94,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #f53c3c;
+    color: #ff964f;
 }
 
 #pulseaudio {
