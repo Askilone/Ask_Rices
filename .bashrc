@@ -127,3 +127,5 @@ function setkblayout() {
 	setxkbmap -layout "$1" -variant "$2";
 }
 
+alias hx="helix"
+alias update-ge="~/.config/protonUpdate.sh"
