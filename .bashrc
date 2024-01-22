@@ -127,3 +127,6 @@ function setkblayout() {
 	setxkbmap -layout "$1" -variant "$2";
 }
 
+alias hx="helix"
+alias hxconf="helix ~/.config/hypr/hyprland.conf"
+alias update-ge="~/.config/protonUpdate.sh"
