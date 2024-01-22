@@ -130,3 +130,4 @@ function setkblayout() {
 alias hx="helix"
 alias hxconf="helix ~/.config/hypr/hyprland.conf"
 alias update-ge="~/.config/protonUpdate.sh"
+alias theme-import="~/themeImport.sh"
