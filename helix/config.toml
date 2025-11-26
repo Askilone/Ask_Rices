@@ -1,7 +1,7 @@
 theme = "Geisha"
 
 [editor]
-line-number = "relative"
+line-number = "absolute"
 mouse = false
 
 [editor.cursor-shape]
